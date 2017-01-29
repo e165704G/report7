@@ -5,3 +5,5 @@ package jp.ac.uryukyu.ie.e165723;
  */
 public class Player_All {
 }
+
+
