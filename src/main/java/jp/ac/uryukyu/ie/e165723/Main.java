@@ -10,7 +10,7 @@ public class Main{
         map.PrintMap();
         Player1 player1 = new Player1();
         player1.PrintPlayer();
-
+//スタートに当たる位置がある場合にPを表示させたい
 
     }
 }
