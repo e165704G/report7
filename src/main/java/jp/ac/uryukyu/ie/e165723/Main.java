@@ -8,6 +8,9 @@ public class Main{
 
         Map map = new Map();
         map.PrintMap();
+        Player1 player1 = new Player1();
+        player1.PrintPlayer();
+
 
     }
 }
