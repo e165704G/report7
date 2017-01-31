@@ -1,11 +1,11 @@
 package jp.ac.uryukyu.ie.e165723;
-
+import java.io.*;
 /**
  * Created by e165723 on 2017/01/29.
  */
 public class Player1 {
     public int row; //プレイヤーの位置（行）
-    public int colum; //プレイヤーの位置（列）
+    public int column; //プレイヤーの位置（列）
 
     //プレイヤーの初期化
     public Player1(Map map) {
