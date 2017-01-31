@@ -7,4 +7,6 @@ public class Player1 {
     public int row; //プレイヤーの位置（行）
     public int colum; //プレイヤーの位置（列）
 
+
+
 }
