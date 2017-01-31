@@ -1,12 +1,10 @@
 package jp.ac.uryukyu.ie.e165723;
 
-/**
- * Created by e165704 on 2017/01/24.
- */
 public class Map {
         int width; //迷路の横の大きさ
         int height; //迷路の縦の大きさ
         int[][] data;//実際の迷路データ
+        int[] p ;
 
         public static final byte PATH = 0; //通路
         public static final byte WALL = 1; //壁
@@ -31,7 +29,6 @@ public class Map {
                 int i, j;
                 for(i=0; i<height; i++){
                         for(j=0; j<width; j++){
-                                //System.out.print(data[i][j]);
                                 switch (data[i][j]) {
                                         case PATH:
                                                 System.out.print("　");
@@ -40,16 +37,38 @@ public class Map {
                                                 System.out.print("＃");
                                                 break;
                                         case ENTRANCE:
-                                                System.out.print("Ｓ");
+                                                System.out.print("Ｐ");
                                                 break;
                                         case EXIT:
                                                 System.out.print("Ｇ");
                                                 break;
-
                                 }
                         }
                         System.out.println();
                 }
         }
-}
+        public void Mover(){
+                //Player1でこの動きを呼び出すため
+
+                }
+        }
+/*
+        public void Playerpoint() {
+                int row, colum, i, j;
+                int[] temp;
+                row = 11;
+                colum = 8;
+                p = new int[]{1, 1};
+                temp = p;
+                for(i = 0; i< width; i++){
+                        for(j = 0; j< height; j++){
+                                if(i == row && j == colum){
+                                        System.out.print("Ｐ");
+                                }
+                        }
+                }
+
+
+
+        }*/
 
