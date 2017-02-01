@@ -1,6 +1,6 @@
-package jp.ac.uryukyu.ie.e165723;
+package jp.ac.uryukyu.ie.e165704;
+import jp.ac.uryukyu.ie.e165704.Map;
 import org.junit.Test;
-import static org.junit.Assert.*;
 
 /**
  * Created by e165723 on 2017/01/31.

@@ -1,4 +1,4 @@
-package jp.ac.uryukyu.ie.e165723;
+package jp.ac.uryukyu.ie.e165704;
 
 public class Map {
 

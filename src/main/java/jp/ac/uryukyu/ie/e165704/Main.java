@@ -1,8 +1,7 @@
-package jp.ac.uryukyu.ie.e165723;
+package jp.ac.uryukyu.ie.e165704;
 
 import java.io.IOException;
 import java.util.Scanner;
-import java.util.jar.Attributes;
 
 public class Main {
     public static void main(String arg[])throws IOException {
