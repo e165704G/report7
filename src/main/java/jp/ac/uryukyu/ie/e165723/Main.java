@@ -9,16 +9,16 @@ public class Main {
 
         System.out.println("名前を入力して下さい。:");
         Scanner scan = new Scanner(System.in);
-       String str;
-        // String str = scan.next();
+        String PlayerName;
+
         while (true) {
-             str = scan.nextLine();
-            if ("".equals(str)) {
+            PlayerName = scan.nextLine();
+            if ("".equals(PlayerName)) {
                 System.out.println("入力エラー：正しく文字を入力してください。");
                 System.out.println("名前を入力して下さい。:");
             } else {
-                System.out.println("文字の入力を確認しました。あなたの名前は" + str + "です。");
-            break;
+                System.out.println("文字の入力を確認しました。Playerの名前は" + PlayerName + "です。");
+                break;
             }
         }
 
@@ -29,10 +29,10 @@ public class Main {
 
 
         if (player1.wallbreak == false) {
-            System.out.println( str +  "は迷える子ひつじです。この迷宮から脱出しましょう!");
+            System.out.println( PlayerName +  "は迷える子ひつじです。この迷宮から脱出しましょう!");
             System.out.println( "動きたい方向の番号を key = の後ろに入力してください。");
         } else {
-            System.out.println(str + "は巨人になったうちの一匹です街を破壊しながらウォールマリアを壊しましょう");
+            System.out.println(PlayerName + "は巨人になったうちの一匹です街を破壊しながらウォールマリアを壊しましょう");
             System.out.println("動きたい方向の番号を key = の後ろに入力してください。");
         }
 
@@ -42,11 +42,13 @@ public class Main {
             map.PrintMap();
         }
         if (player1.wallbreak == false) {
-            System.out.println("おめでとう君は迷宮から脱出することができたよ");
+            System.out.println("おめでとう" + PlayerName + "は迷宮から脱出することができたよ");
+            System.out.println("(脱出END)");
         } else {
             System.out.println("その日人類は思い出した。");
             System.out.println("ヤツらに支配されていた恐怖を...");
             System.out.println("鳥籠の中に囚われていた屈辱を...");
+            System.out.println("(巨人END)");
         }
 
 
