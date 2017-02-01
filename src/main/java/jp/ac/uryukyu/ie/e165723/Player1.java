@@ -39,7 +39,6 @@ public class Player1 {
         final int LEFT = 4; //左
         int key;
         String buf;
-        //clear();
         InputStreamReader isr = new InputStreamReader(System.in);
         BufferedReader br = new BufferedReader(isr);
         System.out.println("方向");
@@ -54,11 +53,12 @@ public class Player1 {
                 key = Integer.parseInt(buf);
             } catch (Exception e) {
                 key = -1;
+
             }
         }
         while(key > 4 || key < 1);//keyが１〜４以外の時に繰り返す
 
-
+        try {
         //プレイヤーの行動
         int[] player = new int[2];
         switch (key){
@@ -75,9 +75,14 @@ public class Player1 {
                 player = map.Mover(row, column, 0, -1, wallbreak);
                 break;
         }
-        row = player[0];
-        column = player[1];
+            row = player[0];
+            column = player[1];
+
+        } catch (Exception e) {
+            System.out.println("その方向はmapの外であるため移動できません。");
+        }
     }
+
 }
 
 
