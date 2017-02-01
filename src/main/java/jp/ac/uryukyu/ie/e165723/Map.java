@@ -1,6 +1,7 @@
 package jp.ac.uryukyu.ie.e165723;
 
 public class Map {
+
         int width; //迷路の横の大きさ
         int height; //迷路の縦の大きさ
         int[][] data;//実際の迷路データ
